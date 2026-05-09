@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Eleganda Management & Consulting LLC | AI Governance & Mobile Notary</title>
+    <meta name="description" content="Eleganda Management & Consulting LLC provides AI Governance Consulting, Management, and Mobile Notary Services in Lawrenceville, GA and surrounding areas." />
+    <meta property="og:title" content="Eleganda Management & Consulting LLC" />
+    <meta property="og:description" content="AI Governance Consulting, Management & Mobile Notary Services — Lawrenceville, GA" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-5QyAV-jF.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-K0rZYuM-.css">
+    <style>
+      #eleganda-social-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px 0 14px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        margin-top: 8px;
+      }
+      #eleganda-social-bar a {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: rgba(255,255,255,0.65);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      #eleganda-social-bar a:hover { color: hsl(42, 55%, 60%); }
+      #eleganda-social-bar svg { width: 18px; height: 18px; flex-shrink: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function() {
+        function injectSocial() {
+          var footer = document.querySelector('footer');
+          if (!footer || document.getElementById('eleganda-social-bar')) return;
+          var footerInner = footer.querySelector('.max-w-7xl');
+          if (!footerInner) return;
+          var bar = document.createElement('div');
+          bar.id = 'eleganda-social-bar';
+          bar.innerHTML = '<a href="https://www.facebook.com/people/Eleganda-Management-Consulting-LLC/61575902671659/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Follow us on Facebook</a>';
+          footerInner.appendChild(bar);
+        }
+        setTimeout(injectSocial, 900);
+        var obs = new MutationObserver(function() {
+          if (!document.getElementById('eleganda-social-bar')) injectSocial();
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          obs.observe(document.body, { childList: true, subtree: false });
+          setTimeout(injectSocial, 900);
+        });
+      })();
+    </script>
+  </body>
+</html>
